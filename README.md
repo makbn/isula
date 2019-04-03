@@ -1,5 +1,9 @@
 # Isula: A Framework for Ant Colony Algorithms
 
+[![](https://jitpack.io/v/makbn/isula.svg)](https://jitpack.io/#makbn/isula)
+
+
+
 Isula allows an easy implementation of Ant-Colony Optimization algorithms using the Java Programming Language. It contains the common elements present in the meta-heuristic to allow algorithm designers the reutilization of common behaviors. With Isula, solving optimization problems with Ant Colony can be done in few lines of code.
 
 Isula in Action
@@ -62,17 +66,32 @@ How to use this code
 --------------------
 The code uploaded to this GitHub Repository corresponds to a Maven Java Project. As such, it is strongly recommended that you have Maven installed before working with Isula.
 
-After downloading - or cloning – the Isula code, just execute `mvn install` at the Isula folder to add it to your local repository. Once the Isula Project is installed in your Maven repository, you can use it as a dependency on your personal Ant Colony Optimization project by adding:
+**Step 1.** Add the JitPack repository to your build file
 
 ```xml
-    <dependencies>
-        <dependency>
-            <groupId>isula</groupId>
-            <artifactId>isula</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
-    </dependencies>
+<repositories>
+		<repository>
+		    <id>jitpack.io</id>
+		    <url>https://jitpack.io</url>
+		</repository>
+	</repositories>
+
 ```
+
+**Step 2.** Add the dependency
+
+```xml
+
+<dependency>
+	    <groupId>com.github.makbn</groupId>
+	    <artifactId>isula</artifactId>
+	    <version>v0.0.1-SNAPSHOT</version>
+	</dependency>
+
+```
+
+
+
 To your project `pom.xml` file. Or if you prefer, you can generate a JAR file of the framework if it is more convenient for you and use your IDE support for external libraries.
 
 Questions, issues or support?
